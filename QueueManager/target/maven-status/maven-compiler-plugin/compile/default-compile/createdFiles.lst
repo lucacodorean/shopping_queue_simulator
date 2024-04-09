@@ -1,0 +1,3 @@
+org\example\queuemanager\HelloApplication.class
+module-info.class
+org\example\queuemanager\HelloController.class

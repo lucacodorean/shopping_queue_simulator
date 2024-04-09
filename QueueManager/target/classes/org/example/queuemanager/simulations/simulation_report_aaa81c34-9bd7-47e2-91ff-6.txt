@@ -1,0 +1,4 @@
+
+2024-04-04T16:33:27.058862600 SIMULATION RESULT: 
+	Average waiting time: 61.201
+	Average service time: 5.419

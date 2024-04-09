@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="698.0" prefWidth="923.0" style="-fx-background-color: #8A5353;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.queuemanager.backend.controllers.ChartViewController">
+   <children>
+      <TabPane layoutX="15.0" layoutY="17.0" prefHeight="654.0" prefWidth="898.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Service time spent by tasks in shop">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="671.0">
+                     <children>
+                          <LineChart fx:id="tbServiceTime" layoutX="122.0" layoutY="34.0" legendSide="RIGHT" prefHeight="558.0" prefWidth="686.0">
+                              <xAxis>
+                                  <NumberAxis side="BOTTOM" tickLabelFill="WHITE" fx:id="xAxisService" />
+                              </xAxis>
+                              <yAxis>
+                                  <NumberAxis fx:id="yAxisService" side="LEFT" tickLabelFill="WHITE" />
+                              </yAxis>
+                          </LineChart>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Total time spent by task in shop">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="tbTotalTime" layoutX="127.0" layoutY="57.0" legendSide="RIGHT" prefHeight="558.0" prefWidth="686.0">
+                          <xAxis>
+                            <NumberAxis side="BOTTOM" tickLabelFill="WHITE" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Arrival time in shop">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <LineChart fx:id="tbArrivalTime" layoutX="127.0" layoutY="57.0" legendSide="RIGHT" prefHeight="558.0" prefWidth="686.0">
+                                <xAxis>
+                                    <NumberAxis side="BOTTOM" tickLabelFill="WHITE" />
+                                </xAxis>
+                                <yAxis>
+                                    <NumberAxis side="LEFT" tickLabelFill="WHITE" />
+                                </yAxis>
+                            </LineChart>
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
